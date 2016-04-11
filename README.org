@@ -46,3 +46,9 @@
 *** Editors
 
 | Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
+
+* Misc
+** Pixie, a lightweight and native lisp
+is built in RPython
+
+- [[https://github.com/pixie-lang/pixie][https://github.com/pixie-lang/pixie]]
