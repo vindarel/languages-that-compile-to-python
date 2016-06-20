@@ -1,5 +1,4 @@
 * List of languages that compile to Python
-
 ** Dg - it's a Python ! No, it's a Haskell !
 
 | sources | [[https://github.com/pyos/dg][https://github.com/pyos/dg]] |
@@ -46,6 +45,51 @@
 *** Editors
 
 | Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
+
+** Coconut - Simple, elegant, Pythonic functional programming
+
+| sources | https://github.com/evhub/coconut |
+| doc     | https://coconut.readthedocs.io   |
+| stable  | YES (v 1.0 on june 2016)         |
+| created | february, 2015 (v0.1)            |
+
+- Coconut compiles  to Python  (not CPython  bytecode, so  it supports
+  other Python implementations: PyPy, Jython, etc)
+- Coconut code runs on any major Python version, 2 or 3
+- all valid Coconut is valid Python 3
+
+- *ipython*/jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
+
+*** Language features
+- pipelines
+  : (1, 2) |*> (+) |> sq |> print
+- pattern matching (=match x in value:=)
+- algeabric data types
+- partial application (=$= sign right after a function name)
+  : expnums = map(pow$(2), range(5))
+  : expnums |> list |> print
+- lazy lists (surround coma-separated lists with =(|= and =|)=)
+- destructuring assignment
+- function composition (with =..=)
+  : fog = f..g
+- prettier lambdas (=->= syntax)
+- parallel programming
+- tail recursion optimization
+- infix notation (like in Haskell with backticks)
+- underscore digits separators (=10_000_000=)
+- decorators support any expression
+  : @ wrapper1 .. wrapper2 $(arg)
+- code pass through the compiler
+- ...
+
+*** Install
+
+: pip install coconut
+
+*** Editors
+- Pygments support
+
+| Sublime | Coconut |
 
 * Misc
 ** Pixie, a lightweight and native lisp
