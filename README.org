@@ -127,8 +127,16 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 - *ipython*/jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
 
 **** Language features
- - pipelines (on the same line, unlike Mochi)
+ - pipelines
    : (1, 2) |*> (+) |> sq |> print
+   For multiline  pipes, surround  them with parenthesis  (python rule
+   that every newline inside parenthesis is ignored):
+#+BEGIN_SRC coconut
+(
+    "hello"
+    |> print
+)
+#+END_SRC
  - pattern matching (=match x in value:=)
  - algeabric data types
  - partial application (=$= sign right after a function name)
