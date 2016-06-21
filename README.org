@@ -20,7 +20,7 @@
 : print "wow" "two lines" sep: "\n"
 - reverse pipe operator:
 : print $ "> {}: {}".format "Karkat" "Reference something other than Doge"
-- pipe and reverse pipe
+- pipe and reverse pipe (on the same line, unlike Mochi)
 : print <| 'What' + 'ever.'
 : 'This is the same thing ' + 'in a different direction.' |> print
 - function notation (arrow =->= notation)
@@ -84,12 +84,16 @@
 
 *** Language features
 - Python-like syntax
+- pipeline operator (multiline ok)
+: range(1, 31)
+: |> map(fizzbuzz)
+: |> pvector()
+: |> print()
 - tail-recursion optimization (self tail recursion only)
 - no loop syntax
 - re-assignments are not allowed in function definition
 - persisent data structures (using Pyrsistent)
 - Pattern matching / Data types, like algebraic data types
-- pipeline operator
 - Syntax  sugar of  anonymous function  definition (=->=  notation and
   =$1= for the arguments)
 - Actor, like the actor of Erlang (using Eventlet)
@@ -120,7 +124,7 @@
 - *ipython*/jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
 
 *** Language features
-- pipelines
+- pipelines (on the same line, unlike Mochi)
   : (1, 2) |*> (+) |> sq |> print
 - pattern matching (=match x in value:=)
 - algeabric data types
