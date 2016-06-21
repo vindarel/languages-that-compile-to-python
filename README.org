@@ -1,6 +1,10 @@
 * List of languages that compile to Python
 ** Dg - it's a Python ! No, it's a Haskell !
 
+#+BEGIN_HTML
+ <img src="https://pyos.github.io/dg/images/seriousdawg.jpg" </img>
+#+END_HTML
+
 | sources | [[https://github.com/pyos/dg][https://github.com/pyos/dg]] |
 | doc     | [[https://pyos.github.io/dg/][https://pyos.github.io/dg/]] |
 | v1 ?    | yes, april 2015            |
@@ -51,7 +55,7 @@
 
 *** Example projects
 
-| dogeweb ,    a    functional     web    framework    atop    asyncio | https://pyos.github.io/dogeweb/ |
+| dogeweb ,    a    functional     web    framework    atop    asyncio | [[https://pyos.github.io/dogeweb/][https://pyos.github.io/dogeweb/]] |
 
 ** Hy - A dialect of Lisp that's embedded in Python
 
