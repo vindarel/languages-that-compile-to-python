@@ -2,7 +2,7 @@
 ** Dg - it's a Python ! No, it's a Haskell !
 
 #+BEGIN_HTML
- <img src="https://pyos.github.io/dg/images/seriousdawg.jpg" </img>
+ <img src="https://pyos.github.io/dg/images/seriousdawg.jpg", title="NOT'REALLY®" </img>
 #+END_HTML
 
 | sources | [[https://github.com/pyos/dg][https://github.com/pyos/dg]] |
@@ -73,13 +73,30 @@
  | Emacs | [[https://github.com/hylang/hy-mode][https://github.com/hylang/hy-mode]] |
  |       | and others lisp modes             |
 
-** Mochi -  Dynamically typed functional programming language
+** Mochi -  Dynamically typed programming language for functional programming and actor-style programming
 
 | sources | [[https://github.com/i2y/mochi][https://github.com/i2y/mochi]] |
 | doc     |                              |
 | v1 ?    | no                           |
 | created | v0.1 on december, 2014       |
 
+- translates to Python3's AST/bytecode
+
+*** Language features
+- Python-like syntax
+- tail-recursion optimization (self tail recursion only)
+- no loop syntax
+- re-assignments are not allowed in function definition
+- persisent data structures (using Pyrsistent)
+- Pattern matching / Data types, like algebraic data types
+- pipeline operator
+- Syntax  sugar of  anonymous function  definition (=->=  notation and
+  =$1= for the arguments)
+- Actor, like the actor of Erlang (using Eventlet)
+- Macro, like the traditional macro of Lisp
+- Anaphoric macros
+- Builtin functions  includes functions exported by  itertools module,
+  recipes, functools module and operator module
 *** Install
 
 : pip3 install mochi
