@@ -3,7 +3,7 @@
 
 | sources | [[https://github.com/pyos/dg][https://github.com/pyos/dg]] |
 | doc     | [[https://pyos.github.io/dg/][https://pyos.github.io/dg/]] |
-| stable  | no                         |
+| v1 ?    | yes, april 2015            |
 | created | june, 2012                 |
 
 *** Install
