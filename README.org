@@ -6,15 +6,20 @@
 | v1 ?    | yes, april 2015            |
 | created | june, 2012                 |
 
+- compiles  to CPython  3.4. Dg is an alternative syntax to Python 3.
+- compatible with all the libraries
+- runs on PyPy (Got to wait for a JIT-enabled PyPy 3.3 first, though.)
+
 *** Language features
 
-- function calls without parenthesis: =print "wow" "two lines" sep: "\n"=
+- function calls without parenthesis:
+: print "wow" "two lines" sep: "\n"
 - reverse pipe operator:
 : print $ "> {}: {}".format "Karkat" "Reference something other than Doge"
 - pipe and reverse pipe
 : print <| 'What' + 'ever.'
 : 'This is the same thing ' + 'in a different direction.' |> print
-- function notation (arrow "->" notation)
+- function notation (arrow =->= notation)
 : function = arg1 arg2 ->
 :     print (arg1.replace "Do " "Did ") arg2 sep: ", " end: ".\n"
 : function "Do something" "dammit"
