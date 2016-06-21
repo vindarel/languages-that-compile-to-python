@@ -91,6 +91,25 @@
 
 | Sublime | Coconut |
 
+** Rabbit - a functional language on top of Python (WIP)
+
+
+| sources | https://github.com/evhub/rabbit |
+| doc     |                                 |
+| stable  | v1.0 on oct, 2014. DISCONTINUED |
+| created | v0.1 on may, 2014               |
+
+University project, discontinued.
+
+Quicksort:
+
+#+BEGIN_SRC
+qsort(l) = (
+    qsort: (as ~ \x\(x @ x<=a)) ++ a ++ qsort: (as ~ \x\(x @ x>a))
+    $ a,as = l
+    ) @ len:l
+#+END_SRC
+
 * Misc
 ** Pixie, a lightweight and native lisp
 is built in RPython
