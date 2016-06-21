@@ -19,9 +19,9 @@
 
 | sources     | [[https://github.com/hylang/hy/][https://github.com/hylang/hy/]] |
 | doc         | [[http://hylang.org/][http://hylang.org/]]            |
-| stable      | no                            |
-| online REPL | [[https://try-hy.appspot.com/][https://try-hy.appspot.com/]]   |
+| v1 ?        | no                            |
 | created     | december, 2012                |
+| online REPL | [[https://try-hy.appspot.com/][https://try-hy.appspot.com/]]   |
 
 *** Install
 
@@ -33,10 +33,10 @@
 
 ** Mochi -  Dynamically typed functional programming language
 
-| sources             | [[https://github.com/i2y/mochi][https://github.com/i2y/mochi]] |
-| doc                 |                              |
-| stable              | no                           |
-| created             | november, 2014               |
+| sources | [[https://github.com/i2y/mochi][https://github.com/i2y/mochi]] |
+| doc     |                              |
+| v1 ?    | no                           |
+| created | v0.1 on december, 2014       |
 
 *** Install
 
@@ -50,7 +50,7 @@
 
 | sources | https://github.com/evhub/coconut |
 | doc     | https://coconut.readthedocs.io   |
-| stable  | YES (v 1.0 on june 2016)         |
+| v1 ?    | yes, on june, 2016               |
 | created | february, 2015 (v0.1)            |
 
 - Coconut compiles  to Python  (not CPython  bytecode, so  it supports
@@ -91,12 +91,12 @@
 
 | Sublime | Coconut |
 
-** Rabbit - a functional language on top of Python (WIP)
+** Rabbit - a functional language on top of Python (discontinued)
 
 
 | sources | https://github.com/evhub/rabbit |
 | doc     |                                 |
-| stable  | v1.0 on oct, 2014. DISCONTINUED |
+| v1 ?    | yes, on oct, 2014. DISCONTINUED    |
 | created | v0.1 on may, 2014               |
 
 University project, discontinued.
