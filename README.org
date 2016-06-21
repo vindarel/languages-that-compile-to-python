@@ -49,6 +49,10 @@
 
 - advanced prompt (prompt toolkit): [[https://gitlab.com/vindarel/ptdg][https://gitlab.com/vindarel/ptdg]] (WIP)
 
+*** Example projects
+
+| dogeweb ,    a    functional     web    framework    atop    asyncio | https://pyos.github.io/dogeweb/ |
+
 ** Hy - A dialect of Lisp that's embedded in Python
 
 | sources     | [[https://github.com/hylang/hy/][https://github.com/hylang/hy/]] |
