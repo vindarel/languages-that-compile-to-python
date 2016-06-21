@@ -68,13 +68,13 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 | created     | december, 2012                |
 | online REPL | [[https://try-hy.appspot.com/][https://try-hy.appspot.com/]]   |
 
-*** Install
+**** Install
 
- : pip install hy
+  : pip install hy
 
-*** Editors
- | Emacs | [[https://github.com/hylang/hy-mode][https://github.com/hylang/hy-mode]] |
- |       | and others lisp modes             |
+**** Editors
+  | Emacs | [[https://github.com/hylang/hy-mode][https://github.com/hylang/hy-mode]] |
+  |       | and others lisp modes             |
 
 ** Mochi -  Dynamically typed programming language for functional programming and actor-style programming
 
@@ -85,32 +85,32 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 - translates to Python3's AST/bytecode
 
-*** Language features
-- Python-like syntax
-- pipeline operator (multiline ok)
-: range(1, 31)
-: |> map(fizzbuzz)
-: |> pvector()
-: |> print()
-- tail-recursion optimization (self tail recursion only)
-- no loop syntax
-- re-assignments are not allowed in function definition
-- persisent data structures (using Pyrsistent)
-- Pattern matching / Data types, like algebraic data types
-- Syntax  sugar of  anonymous function  definition (=->=  notation and
-  =$1= for the arguments)
-- Actor, like the actor of Erlang (using Eventlet)
-- Macro, like the traditional macro of Lisp
-- Anaphoric macros
-- Builtin functions  includes functions exported by  itertools module,
-  recipes, functools module and operator module
-*** Install
+**** Language features
+ - Python-like syntax
+ - pipeline operator (multiline ok)
+ : range(1, 31)
+ : |> map(fizzbuzz)
+ : |> pvector()
+ : |> print()
+ - tail-recursion optimization (self tail recursion only)
+ - no loop syntax
+ - re-assignments are not allowed in function definition
+ - persisent data structures (using Pyrsistent)
+ - Pattern matching / Data types, like algebraic data types
+ - Syntax  sugar of  anonymous function  definition (=->=  notation and
+   =$1= for the arguments)
+ - Actor, like the actor of Erlang (using Eventlet)
+ - Macro, like the traditional macro of Lisp
+ - Anaphoric macros
+ - Builtin functions  includes functions exported by  itertools module,
+   recipes, functools module and operator module
+**** Install
 
-: pip3 install mochi
+ : pip3 install mochi
 
-*** Editors
+**** Editors
 
-| Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
+ | Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
 
 ** Coconut - Simple, elegant, Pythonic functional programming
 
@@ -126,36 +126,36 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 - *ipython*/jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
 
-*** Language features
-- pipelines (on the same line, unlike Mochi)
-  : (1, 2) |*> (+) |> sq |> print
-- pattern matching (=match x in value:=)
-- algeabric data types
-- partial application (=$= sign right after a function name)
-  : expnums = map(pow$(2), range(5))
-  : expnums |> list |> print
-- lazy lists (surround coma-separated lists with =(|= and =|)=)
-- destructuring assignment
-- function composition (with =..=)
-  : fog = f..g
-- prettier lambdas (=->= syntax)
-- parallel programming
-- tail recursion optimization
-- infix notation (like in Haskell with backticks)
-- underscore digits separators (=10_000_000=)
-- decorators support any expression
-  : @ wrapper1 .. wrapper2 $(arg)
-- code pass through the compiler
-- ...
+**** Language features
+ - pipelines (on the same line, unlike Mochi)
+   : (1, 2) |*> (+) |> sq |> print
+ - pattern matching (=match x in value:=)
+ - algeabric data types
+ - partial application (=$= sign right after a function name)
+   : expnums = map(pow$(2), range(5))
+   : expnums |> list |> print
+ - lazy lists (surround coma-separated lists with =(|= and =|)=)
+ - destructuring assignment
+ - function composition (with =..=)
+   : fog = f..g
+ - prettier lambdas (=->= syntax)
+ - parallel programming
+ - tail recursion optimization
+ - infix notation (like in Haskell with backticks)
+ - underscore digits separators (=10_000_000=)
+ - decorators support any expression
+   : @ wrapper1 .. wrapper2 $(arg)
+ - code pass through the compiler
+ - ...
 
-*** Install
+**** Install
 
-: pip install coconut
+ : pip install coconut
 
-*** Editors
-- Pygments support
+**** Editors
+ - Pygments support
 
-| Sublime | Coconut |
+ | Sublime | Coconut |
 
 ** Rabbit - a functional language on top of Python (discontinued)
 
