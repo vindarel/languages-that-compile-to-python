@@ -160,6 +160,14 @@
 
 University project, discontinued.
 
+From the author's words: ([[https://www.reddit.com/r/Python/comments/4owzu7/coconut_functional_programming_in_python/d4hhfw0][src]])
+#+BEGIN_QUOTE
+Coconut is my attempt to fix the mistakes I thought I made with Rabbit, namely:
+
+    * Coconut is compiled, while Rabbit is interpreted, making Coconut much faster
+    * Coconut is an extension to Python, while Rabbit is a replacement, making Coconut much easier to use
+#+END_QUOTE
+
 Quicksort:
 
 #+BEGIN_SRC
