@@ -47,6 +47,8 @@
 | Gedit   | [[https://github.com/pyos/dg-gedit/][https://github.com/pyos/dg-gedit/]]    |
 | Sublime | [[https://github.com/pyos/dg-textmate/][https://github.com/pyos/dg-textmate/]] |
 
+- advanced prompt (prompt toolkit): [[https://gitlab.com/vindarel/ptdg][https://gitlab.com/vindarel/ptdg]] (WIP)
+
 ** Hy - A dialect of Lisp that's embedded in Python
 
 | sources     | [[https://github.com/hylang/hy/][https://github.com/hylang/hy/]] |
