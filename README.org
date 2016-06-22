@@ -62,11 +62,17 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 ** Hy - A dialect of Lisp that's embedded in Python
 
+#+BEGIN_HTML
+<img src='http://docs.hylang.org/en/latest/_images/hy-logo-small.png', title='' </img>
+#+END_HTML
+
 | sources     | [[https://github.com/hylang/hy/][https://github.com/hylang/hy/]] |
 | doc         | [[http://hylang.org/][http://hylang.org/]]            |
 | v1 ?        | no                            |
 | created     | december, 2012                |
 | online REPL | [[https://try-hy.appspot.com/][https://try-hy.appspot.com/]]   |
+| discuss     | [[https://groups.google.com/forum/#!forum/hylang-discuss][google group]]                  |
+| IRC         | =hy= on freenode              |
 
 - Hy compiles to Python bytecode (AST)
 - Hy can use  python libraries, and we  can import a Hy  module into a
