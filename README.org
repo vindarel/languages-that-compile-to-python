@@ -106,11 +106,11 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 
 **** Example projects
-| Github trending     | https://github.com/trending/hy                     |
-| Live coding Blender | https://github.com/chr15m/blender-hylang-live-code |
+| Github trending     | [[https://github.com/trending/hy][https://github.com/trending/hy]]                     |
+| Live coding Blender | [[https://github.com/chr15m/blender-hylang-live-code][https://github.com/chr15m/blender-hylang-live-code]] |
 
 **** Good reads
-| How Hy backported "yield from" to Python 2 | http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/ |
+| How Hy backported "yield from" to Python 2 | [[http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/][http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/]] |
 
 ** Mochi -  Dynamically typed programming language for functional programming and actor-style programming
 
@@ -150,8 +150,8 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 ** Coconut - Simple, elegant, Pythonic functional programming
 
-| sources | https://github.com/evhub/coconut |
-| doc     | https://coconut.readthedocs.io   |
+| sources | [[https://github.com/evhub/coconut][https://github.com/evhub/coconut]] |
+| doc     | [[https://coconut.readthedocs.io][https://coconut.readthedocs.io]]   |
 | v1 ?    | yes, on june, 2016               |
 | created | february, 2015 (v0.1)            |
 
@@ -201,15 +201,13 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
  | Sublime | Coconut |
 
-** Rabbit - a functional language on top of Python (discontinued)
+** Rabbit - a functional language on top of Python (discontinued in favor of Coconut)
 
 
-| sources | https://github.com/evhub/rabbit |
+| sources | [[https://github.com/evhub/rabbit][https://github.com/evhub/rabbit]] |
 | doc     |                                 |
 | v1 ?    | yes, on oct, 2014. DISCONTINUED    |
 | created | v0.1 on may, 2014               |
-
-University project, discontinued.
 
 From the author's words: ([[https://www.reddit.com/r/Python/comments/4owzu7/coconut_functional_programming_in_python/d4hhfw0][src]])
 #+BEGIN_QUOTE
