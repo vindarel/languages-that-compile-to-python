@@ -68,13 +68,43 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 | created     | december, 2012                |
 | online REPL | [[https://try-hy.appspot.com/][https://try-hy.appspot.com/]]   |
 
+- Hy compiles to Python bytecode (AST)
+- Hy can use  python libraries, and we  can import a Hy  module into a
+  Python program.
+
+**** Language features
+
+- it's python: context managers, named and keyword arguments, list comprehensions,...
+- macros, reader macros
+- threading macro (like Clojure), with =->= (similar to pipes)
+: (-> (read) (eval) (print) (loop))
+#+BEGIN_SRC lisp
+(import [sh [cat grep wc]])
+(-> (cat "/usr/share/dict/words") (grep "-E" "^hy") (wc "-l"))  ; => 210
+#+END_SRC
+- [[http://docs.hylang.org/en/latest/contrib/anaphoric.html][anaphoric functions]]
+: (require hy.contrib.anaphoric)
+: (list (ap-map (* it 2) [1 2 3]))  ; => [2, 4, 6]
+- fraction literal (like Clojure)
+- unicode support (I mean for symbols)
+- pattern matching (in libraries, like [[https://github.com/kirbyfan64/hyskell][Hyskell]])
+- monads (in libraries, like [[https://github.com/pyx/hymn][Hymn]])
+
 **** Install
 
   : pip install hy
 
 **** Editors
   | Emacs | [[https://github.com/hylang/hy-mode][https://github.com/hylang/hy-mode]] |
-  |       | and others lisp modes             |
+  | All   | lisp modes for any editor         |
+
+
+**** Example projects
+| Github trending     | https://github.com/trending/hy                     |
+| Live coding Blender | https://github.com/chr15m/blender-hylang-live-code |
+
+**** Good reads
+| How Hy backported "yield from" to Python 2 | http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/ |
 
 ** Mochi -  Dynamically typed programming language for functional programming and actor-style programming
 
