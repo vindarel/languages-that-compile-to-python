@@ -90,7 +90,7 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
 - it's python: context managers, named and keyword arguments, list comprehensions,...
 - macros, reader macros
-- threading macro (like Clojure), with =->= (similar to pipes)
+- threading macros (like Clojure), with =->= and =->>= (similar to pipes)
 : (-> (read) (eval) (print) (loop))
 #+BEGIN_SRC lisp
 (import [sh [cat grep wc]])
