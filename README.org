@@ -1,3 +1,11 @@
+# This file is writen in org-mode http://orgmode.org
+# It is to be opened  with Emacs, which will  recognize it as
+# rich text.
+
+# Vindarel 2016
+
+#+OPTIONS: toc:4
+
 * List of languages that compile to Python
 
 We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
@@ -160,7 +168,7 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 - Coconut code runs on any major Python version, 2 or 3
 - all valid Python 3 is valid Coconut: you can write standard Python3 in Coconut.
 
-- *ipython*/jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
+- *ipython* / jupyter [[http://coconut.readthedocs.io/en/master/DOCS.html#ipython-jupyter-support][support]] (installed by default)
 
 **** Language features
  - pipelines
@@ -219,7 +227,7 @@ Coconut is my attempt to fix the mistakes I thought I made with Rabbit, namely:
 
 Quicksort:
 
-#+BEGIN_SRC
+#+BEGIN_SRC txt
 qsort(l) = (
     qsort: (as ~ \x\(x @ x<=a)) ++ a ++ qsort: (as ~ \x\(x @ x>a))
     $ a,as = l
@@ -227,7 +235,7 @@ qsort(l) = (
 #+END_SRC
 
 * Misc
-** Pixie, a lightweight and native lisp
+** Pixie, a lightweight and native lisp built in RPython
 is built in RPython
 
 - [[https://github.com/pixie-lang/pixie][https://github.com/pixie-lang/pixie]]
