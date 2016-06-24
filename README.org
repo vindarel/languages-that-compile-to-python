@@ -155,8 +155,8 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
  | Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
 
-
 **** Good reads
+
 | [[https://www.youtube.com/watch?v=bFqQd1eyY10][Heny Müller's talk at EuroPython 2015]] |
 
 ** Coconut - Simple, elegant, Pythonic functional programming
@@ -184,7 +184,7 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
     |> print
 )
 #+END_SRC
- - pattern matching (=match x in value:=)
+ - pattern matching (=match x in value:=), guards
  - algeabric data types
  - partial application (=$= sign right after a function name)
    : expnums = map(pow$(2), range(5))
