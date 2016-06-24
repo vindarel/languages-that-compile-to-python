@@ -155,6 +155,10 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
 
  | Atom | [[https://github.com/i2y/language-mochi][https://github.com/i2y/language-mochi]] |
 
+
+**** Good reads
+| [[https://www.youtube.com/watch?v=bFqQd1eyY10][Heny Müller's talk at EuroPython 2015]] |
+
 ** Coconut - Simple, elegant, Pythonic functional programming
 
 | sources | [[https://github.com/evhub/coconut][https://github.com/evhub/coconut]] |
