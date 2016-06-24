@@ -62,7 +62,6 @@ We have *Dogelang*, *Mochi*, *Hy*, *Coconut* and *Rabbit* !
  | Gedit   | [[https://github.com/pyos/dg-gedit/][https://github.com/pyos/dg-gedit/]]    |
  | Sublime | [[https://github.com/pyos/dg-textmate/][https://github.com/pyos/dg-textmate/]] |
 
- - advanced prompt (prompt toolkit): [[https://gitlab.com/vindarel/ptdg][https://gitlab.com/vindarel/ptdg]] (WIP)
 
 **** Example projects
 
