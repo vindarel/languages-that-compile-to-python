@@ -368,3 +368,7 @@ From the FAQ:
   first two arguments. This allows the math system to be extended to
   complex numbers, matrices, etc. The performance penalty of such a
   polymorphic call is completely removed by the RPython generated JIT.
+
+### Good talks
+
+- ["Pixie - A Lightweight Lisp with 'Magical' Powers" by Timothy Baldridge on StrangeLoop, september 2015](https://www.youtube.com/watch?v=1AjhFZVfB9c)
