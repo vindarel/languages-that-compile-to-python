@@ -330,8 +330,12 @@ Pixie is built in
 the same language PyPy is written in, and as such "supports a fairly
 fast GC and an amazingly fast tracing JIT".
 
+Inspired by Clojure.
+
+### Features
+
 Some planned and implemented features:
- 
+
 - Immutable datastructures
 - Protocols first implementation
 - Transducers at-the-bottom (most primitives are based off of reduce)
