@@ -334,14 +334,14 @@ Inspired by Clojure.
 
 ### Features
 
-Some planned and implemented features:
-
 - Immutable datastructures
 - Protocols first implementation
 - Transducers at-the-bottom (most primitives are based off of reduce)
 - A "good enough" JIT (implemented, tuning still a WIP, but not bad performance today)
 - Easy FFI
-- Pattern matching (TODO)
+- object system
+- continuations, async I/O inspired by nodejs (see talk)
+- Pattern matching (planned)
 
 From the FAQ:
 
