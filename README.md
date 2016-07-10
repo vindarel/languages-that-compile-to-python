@@ -1,9 +1,10 @@
-# List of languages that compile to Python
 We have 4 active languages: **Dogelang**, **Mochi**, **Hy** and **Coconut** !
 
 <!-- generetae the toc with npm install markdown-toc -->
 
 <!-- toc -->
+
+- [List of languages that compile to Python](#list-of-languages-that-compile-to-python)
   * [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
     + [Language features](#language-features)
     + [Install](#install)
@@ -29,6 +30,8 @@ We have 4 active languages: **Dogelang**, **Mochi**, **Hy** and **Coconut** !
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
 
 <!-- tocstop -->
+
+# List of languages that compile to Python
 
 ## Dg - it's a Python ! No, it's a Haskell !
 
