@@ -274,7 +274,12 @@ Coconut |  
 
 -   Pygments support
 
-- Sublime plugin
+Editor |  
+--- | ---
+Emacs | https://github.com/NickSeagull/coconut-mode
+Sublime | https://github.com/evhub/sublime-coconut
+Vim | https://github.com/manicmaniac/coconut.vim
+
 
 ## Rabbit - a functional language on top of Python (discontinued in favor of Coconut)
 
