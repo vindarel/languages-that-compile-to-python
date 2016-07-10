@@ -317,6 +317,54 @@ qsort(l) = (
 
 ## Pixie, a lightweight and native lisp built in RPython
 
-is built in RPython
+Pixie |  
+--- | ---
+Sources | https://github.com/pixie-lang/pixie
+Doc | Examples: https://github.com/pixie-lang/pixie/tree/master/examples
+v0.1 ? | no
+REPL, installer, test runner,… | https://github.com/pixie-lang/dust
+IRC | `#pixie-lang` on Freenode
 
--   [<https://github.com/pixie-lang/pixie>](https://github.com/pixie-lang/pixie)
+Pixie is built in
+[RPython](https://pypy.readthedocs.io/en/latest/coding-guide.html),
+the same language PyPy is written in, and as such "supports a fairly
+fast GC and an amazingly fast tracing JIT".
+
+Some planned and implemented features:
+ 
+- Immutable datastructures
+- Protocols first implementation
+- Transducers at-the-bottom (most primitives are based off of reduce)
+- A "good enough" JIT (implemented, tuning still a WIP, but not bad performance today)
+- Easy FFI
+- Pattern matching (TODO)
+
+From the FAQ:
+
+- Pixie implements its own virtual machine. It does not run on the
+  JVM, CLR or Python VM. It implements its own bytecode, has its own
+  GC and JIT. And it's small. Currently the interpreter, JIT, GC, and
+  stdlib clock in at about 10.3MB once compiled down to an executable.
+- The JIT makes some things fast. Very fast. Code like the following
+  compiles down to a loop with 6 CPU instructions. While this may not
+  be too impressive for any language that uses a tracing jit, it is
+  fairly unique for a language as young as Pixie.
+
+```lisp
+;;  This code adds up to 10000 from 0 via calling a function that takes a variable number of arguments.
+;;  That function then reduces over the argument list to add up all given arguments.
+
+(defn add-fn [& args]
+  (reduce -add 0 args))
+
+(loop [x 0]
+  (if (eq x 10000)
+    x
+    (recur (add-fn x 1))))
+```
+
+- Math system is fully polymorphic. Math primitives (+,-, etc.) are
+  built off of polymorphic functions that dispatch on the types of the
+  first two arguments. This allows the math system to be extended to
+  complex numbers, matrices, etc. The performance penalty of such a
+  polymorphic call is completely removed by the RPython generated JIT.
