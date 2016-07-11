@@ -394,7 +394,9 @@ doc | http://problog.readthedocs.io/en/latest/
 v1 ? | yes, even v2
 online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
 
-Its only requirement is Python2.7 or 3.
+ProbLog is built with Python. Its only requirement is Python2.7 or 3.
+
+One can [interact with ProbLog from within Python code](http://problog.readthedocs.io/en/latest/python.html).
 
 ### Install
 
