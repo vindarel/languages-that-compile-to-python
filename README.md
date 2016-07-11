@@ -28,6 +28,10 @@ We have 4 active languages: **Dogelang**, **Mochi**, **Hy** and **Coconut** !
   * [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
 - [Misc](#misc)
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
+    + [Features](#features)
+    + [Good talks](#good-talks)
+  * [ProbLog. Probabilistic Logic Programming](#problog-probabilistic-logic-programming)
+    + [Install](#install-4)
 
 <!-- tocstop -->
 
@@ -376,3 +380,22 @@ From the FAQ:
 ### Good talks
 
 - ["Pixie - A Lightweight Lisp with 'Magical' Powers" by Timothy Baldridge on StrangeLoop, september 2015](https://www.youtube.com/watch?v=1AjhFZVfB9c)
+
+## ProbLog. Probabilistic Logic Programming
+
+Probabilistic logic programs are logic programs in which some of the
+facts are annotated with probabilities.
+
+ProbLog |  
+--- | ---
+official website | https://dtai.cs.kuleuven.be/problog/
+sources | https://bitbucket.org/problog/problog
+doc | http://problog.readthedocs.io/en/latest/
+v1 ? | yes, even v2
+online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
+
+Its only requirement is Python2.7 or 3.
+
+### Install
+
+    pip install problog
