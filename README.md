@@ -266,9 +266,14 @@ Coconut |  
 
 ### Language features
 
--   pipelines : (1, 2) |\*\> (+) |\> sq |\> print For multiline pipes,
-    surround them with parenthesis (python rule that every newline
-    inside parenthesis is ignored):
+-   pipelines
+
+```livescript
+(1, 2) |*> (+) |> sq |> print
+```
+
+For multiline pipes, surround them with parenthesis (python rule that
+every newline inside parenthesis is ignored):
 
 ```coconut
 (
@@ -283,13 +288,19 @@ Coconut |  
     = map(pow\$(2), range(5)) : expnums |\> list |\> print
 -   lazy lists (surround coma-separated lists with `(|` and `|)`)
 -   destructuring assignment
--   function composition (with `..`) : fog = f..g
+-   function composition (with `..`)
+```livescript
+fog = f..g
+```
 -   prettier lambdas (`->` syntax)
 -   parallel programming
 -   tail recursion optimization
 -   infix notation (like in Haskell with backticks)
 -   underscore digits separators (`10_000_000`)
--   decorators support any expression : @ wrapper1 .. wrapper2 \$(arg)
+-   decorators support any expression
+```
+@ wrapper1 .. wrapper2 $(arg)
+```
 -   code pass through the compiler
 -   ...
 
