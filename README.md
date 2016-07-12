@@ -33,6 +33,7 @@ Then, we have languages that target the Python platform.
 - [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
   * [ProbLog. Probabilistic Logic Programming](#problog-probabilistic-logic-programming)
     + [Install](#install-4)
+  * [Haxe, the cross-platform toolkit](#haxe-the-cross-platform-toolkit)
 - [Misc](#misc)
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
     + [Features](#features)
@@ -378,6 +379,35 @@ One can [interact with ProbLog from within Python code](http://problog.readthedo
 
     pip install problog
 
+## Haxe, the cross-platform toolkit
+
+Haxe |  
+--- | ---
+sources | https://github.com/HaxeFoundation/haxe
+official website | https://haxe.org/
+doc | https://haxe.org/documentation/introduction/
+online REPL |_http://try.haxe.org/
+v1 ? | v3
+
+Haxe is an open source toolkit that allows you to easily build
+cross-platform tools and applications that target many mainstream
+platforms (Python, ActionScript3, C++, C#, Flash, Java, Javascript,
+NekoVM, PHP, Lua).
+
+```haxe
+class Test {
+  static function main() {
+    var people = [
+      "Elizabeth" => "Programming",
+      "Joel" => "Design"
+    ];
+    for (name in people.keys()) {
+      var job = people[name];
+      trace('$name does $job for a living!');
+    }
+  }
+}
+```
 
 # Misc
 
