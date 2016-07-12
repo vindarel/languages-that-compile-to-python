@@ -57,15 +57,19 @@ created | june, 2012
 
 -   function calls without parenthesis:
 
-        print "wow" "two lines" sep: "\n"
+```livescript
+print "wow" "two lines" sep: "\n"
+```
 
 -   reverse pipe operator:
 
-        print $ "> {}: {}".format "Karkat" "Reference something other than Doge"
+```livescript
+print $ "> {}: {}".format "Karkat" "Reference something other than Doge"
+```
 
 -   pipe and reverse pipe (on the same line, unlike Mochi)
 
-```dg
+```livescript
 print <| 'What' + 'ever.' : 'This is the same thing ' + 'in a different direction.' |> print
 ```
 
@@ -80,13 +84,17 @@ function "Do something" "dammit"
 -   function composition (with `<-`)
 -   first class operators
 
-        f = (+)
-        f 1 2 == 3
+```livescript
+f = (+)
+f 1 2 == 3
+```
 
 -   partial application (and `bind` is `functools.partial`)
 
-        f = (2 *)
-        f 10 == 20
+```livescript
+f = (2 *)
+f 10 == 20
+```
 
 -   new functional builtins: `foldl` and `foldl1`, `scanl`, `flip`,
     `takewhile` and `dropwhile` (from `itertools`), `take` and `drop`,
