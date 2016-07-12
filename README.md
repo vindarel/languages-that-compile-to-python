@@ -211,7 +211,7 @@ Mochi |  
 -   Python-like syntax
 -   pipeline operator (multiline ok)
 
-```
+```elixir
 range(1, 31)
 |> map(fizzbuzz)
 |> pvector()
