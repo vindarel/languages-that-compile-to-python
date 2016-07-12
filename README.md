@@ -1,10 +1,14 @@
-We have 4 active languages: **Dogelang**, **Mochi**, **Hy** and **Coconut** !
+We have languages that are rather variants of Python since they can
+use Python libs: that's the case of **Dogelang**, **Mochi**, **Hy**
+and **Coconut**.
+
+Then, we have languages that target the Python platform.
 
 <!-- generetae the toc with npm install markdown-toc -->
 
 <!-- toc -->
 
-- [List of languages that compile to Python](#list-of-languages-that-compile-to-python)
+- [Variants of Python. They can use Python libs.](#variants-of-python-they-can-use-python-libs)
   * [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
     + [Language features](#language-features)
     + [Install](#install)
@@ -26,16 +30,19 @@ We have 4 active languages: **Dogelang**, **Mochi**, **Hy** and **Coconut** !
     + [Install](#install-3)
     + [Editors](#editors-3)
   * [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
+- [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
+  * [ProbLog. Probabilistic Logic Programming](#problog-probabilistic-logic-programming)
+    + [Install](#install-4)
 - [Misc](#misc)
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
     + [Features](#features)
     + [Good talks](#good-talks)
-  * [ProbLog. Probabilistic Logic Programming](#problog-probabilistic-logic-programming)
-    + [Install](#install-4)
 
 <!-- tocstop -->
 
-# List of languages that compile to Python
+# Variants of Python. They can use Python libs.
+
+The following languages can make use of the Python libraries.
 
 ## Dg - it's a Python ! No, it's a Haskell !
 
@@ -348,6 +355,30 @@ qsort(l) = (
     ) @ len:l
 ```
 
+# Other languages that target the Python platform
+
+## ProbLog. Probabilistic Logic Programming
+
+Probabilistic logic programs are logic programs in which some of the
+facts are annotated with probabilities.
+
+ProbLog |  
+--- | ---
+official website | https://dtai.cs.kuleuven.be/problog/
+sources | https://bitbucket.org/problog/problog
+doc | http://problog.readthedocs.io/en/latest/
+v1 ? | yes, even v2
+online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
+
+ProbLog is built with Python. Its only requirement is Python2.7 or 3.
+
+One can [interact with ProbLog from within Python code](http://problog.readthedocs.io/en/latest/python.html).
+
+### Install
+
+    pip install problog
+
+
 # Misc
 
 ## Pixie, a lightweight and native lisp built in RPython
@@ -411,24 +442,3 @@ From the FAQ:
 ### Good talks
 
 - ["Pixie - A Lightweight Lisp with 'Magical' Powers" by Timothy Baldridge on StrangeLoop, september 2015](https://www.youtube.com/watch?v=1AjhFZVfB9c)
-
-## ProbLog. Probabilistic Logic Programming
-
-Probabilistic logic programs are logic programs in which some of the
-facts are annotated with probabilities.
-
-ProbLog |  
---- | ---
-official website | https://dtai.cs.kuleuven.be/problog/
-sources | https://bitbucket.org/problog/problog
-doc | http://problog.readthedocs.io/en/latest/
-v1 ? | yes, even v2
-online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
-
-ProbLog is built with Python. Its only requirement is Python2.7 or 3.
-
-One can [interact with ProbLog from within Python code](http://problog.readthedocs.io/en/latest/python.html).
-
-### Install
-
-    pip install problog
