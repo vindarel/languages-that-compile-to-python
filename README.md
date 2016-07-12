@@ -123,6 +123,8 @@ Editor |  
   Gedit |     [<https://github.com/pyos/dg-gedit/>](https://github.com/pyos/dg-gedit/)
   Sublime |   [<https://github.com/pyos/dg-textmate/>](https://github.com/pyos/dg-textmate/)
 
+Pygments support.
+
 ### Example projects
 
 
