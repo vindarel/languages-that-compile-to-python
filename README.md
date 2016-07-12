@@ -57,29 +57,36 @@ created | june, 2012
 
 -   function calls without parenthesis:
 
-        print "wow" "two lines" sep: "\\n"
+        print "wow" "two lines" sep: "\n"
 
 -   reverse pipe operator:
 
-        print \$ "\> {}: {}".format "Karkat" "Reference something other than Doge"
+        print $ "> {}: {}".format "Karkat" "Reference something other than Doge"
 
 -   pipe and reverse pipe (on the same line, unlike Mochi)
 
-        print \<| 'What' + 'ever.' : 'This is the same thing ' + 'in a different direction.' |\> print
+```dg
+print <| 'What' + 'ever.' : 'This is the same thing ' + 'in a different direction.' |> print
+```
 
 -   function notation (arrow `->` notation)
 
-        function = arg1 arg2 -\> : print (arg1.replace "Do " "Did ") arg2 sep: ", " end: ".\\n" : function "Do something" "dammit"
+```dg
+function = arg1 arg2 -> : print (arg1.replace "Do " "Did ") arg2 sep: ", " end: ".\n"
+function "Do something" "dammit"
+```
 
 -   infix notation (with backticks)
 -   function composition (with `<-`)
 -   first class operators
 
-        f = (+) : f 1 2 == 3
+        f = (+)
+        f 1 2 == 3
 
 -   partial application (and `bind` is `functools.partial`)
 
-        f = (2 \*) : f 10 == 20
+        f = (2 *)
+        f 10 == 20
 
 -   new functional builtins: `foldl` and `foldl1`, `scanl`, `flip`,
     `takewhile` and `dropwhile` (from `itertools`), `take` and `drop`,
@@ -87,7 +94,7 @@ created | june, 2012
 -   decorators don't need special syntax, they're just called with a
     function
 
-        wtf = the~decorator~ \$ -\>
+        wtf = the~decorator~ $ ->
 
 ### Install
 
@@ -196,7 +203,12 @@ Mochi |  
 -   Python-like syntax
 -   pipeline operator (multiline ok)
 
-        range(1, 31) : |\> map(fizzbuzz) : |\> pvector() : |\> print()
+```
+range(1, 31)
+|> map(fizzbuzz)
+|> pvector()
+|> print()
+```
 
 -   tail-recursion optimization (self tail recursion only)
 -   no loop syntax
@@ -250,7 +262,7 @@ Coconut |  
     surround them with parenthesis (python rule that every newline
     inside parenthesis is ignored):
 
-``` {.coconut}
+```coconut
 (
     "hello"
     |> print
