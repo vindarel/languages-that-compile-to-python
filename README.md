@@ -71,7 +71,7 @@ print <| 'What' + 'ever.' : 'This is the same thing ' + 'in a different directio
 
 -   function notation (arrow `->` notation)
 
-```dg
+```livescript
 function = arg1 arg2 -> : print (arg1.replace "Do " "Did ") arg2 sep: ", " end: ".\n"
 function "Do something" "dammit"
 ```
