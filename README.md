@@ -148,11 +148,11 @@ sources |      [<https://github.com/hylang/hy/>](https://github.com/hylang/hy/)
 -   threading macros (like Clojure), with `->` and `->>` (similar to
     pipes)
 
-``` {.example}
+```lisp
 (-> (read) (eval) (print) (loop))
 ```
 
-``` {.commonlisp}
+```lisp
 (import [sh [cat grep wc]])
 (-> (cat "/usr/share/dict/words") (grep "-E" "^hy") (wc "-l"))  ; => 210
 ```
@@ -160,7 +160,7 @@ sources |      [<https://github.com/hylang/hy/>](https://github.com/hylang/hy/)
 -   [anaphoric
     functions](http://docs.hylang.org/en/latest/contrib/anaphoric.html)
 
-``` {.example}
+```lisp
 (require hy.contrib.anaphoric)
 (list (ap-map (* it 2) [1 2 3]))  ; => [2, 4, 6]
 ```
