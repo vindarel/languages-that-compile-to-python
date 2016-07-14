@@ -294,8 +294,13 @@ every newline inside parenthesis is ignored):
 
 -   pattern matching (`match x in value:`), guards
 -   algeabric data types
--   partial application (`$` sign right after a function name) : expnums
-    = map(pow\$(2), range(5)) : expnums |\> list |\> print
+-   partial application (`$` sign right after a function name)
+
+```elixir
+expnums = map(pow$(2), range(5))
+expnums |> list |> print
+```
+
 -   lazy lists (surround coma-separated lists with `(|` and `|)`)
 -   destructuring assignment
 -   function composition (with `..`)
