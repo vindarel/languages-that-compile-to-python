@@ -1,8 +1,9 @@
-We have languages that are rather variants of Python since they can
-use Python libs: that's the case of **Dogelang**, **Mochi**, **Hy**
-and **Coconut**.
+We have languages that are variants of Python since they can use
+Python libs: that's the case of **Dogelang**, **Mochi**, **Hy** and
+**Coconut**.
 
-Then, we have languages that target the Python platform.
+Then, we have languages that target the Python platform and
+domain-specific languages, fully compatible with Python or not.
 
 <!-- generetae the toc with npm install markdown-toc -->
 
@@ -31,9 +32,13 @@ Then, we have languages that target the Python platform.
     + [Editors](#editors-3)
   * [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
 - [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
-  * [ProbLog. Probabilistic Logic Programming](#problog-probabilistic-logic-programming)
-    + [Install](#install-4)
   * [Haxe, the cross-platform toolkit](#haxe-the-cross-platform-toolkit)
+- [Domain-specific languages](#domain-specific-languages)
+  * [ProbLog. Probabilistic Logic Programming.](#problog-probabilistic-logic-programming)
+    + [Install](#install-4)
+  * [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
+    + [Installation](#installation)
+    + [Example projects](#example-projects-2)
 - [Misc](#misc)
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
     + [Features](#features)
@@ -362,29 +367,7 @@ qsort(l) = (
     $ a,as = l
     ) @ len:l
 ```
-
 # Other languages that target the Python platform
-
-## ProbLog. Probabilistic Logic Programming
-
-Probabilistic logic programs are logic programs in which some of the
-facts are annotated with probabilities.
-
-ProbLog |  
---- | ---
-official website | https://dtai.cs.kuleuven.be/problog/
-sources | https://bitbucket.org/problog/problog
-doc | http://problog.readthedocs.io/en/latest/
-v1 ? | yes, even v2
-online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
-
-ProbLog is built with Python. Its only requirement is Python2.7 or 3.
-
-One can [interact with ProbLog from within Python code](http://problog.readthedocs.io/en/latest/python.html).
-
-### Install
-
-    pip install problog
 
 ## Haxe, the cross-platform toolkit
 
@@ -415,6 +398,65 @@ class Test {
   }
 }
 ```
+# Domain-specific languages
+
+## ProbLog. Probabilistic Logic Programming.
+
+Probabilistic logic programs are logic programs in which some of the
+facts are annotated with probabilities.
+
+ProbLog |  
+--- | ---
+official website | https://dtai.cs.kuleuven.be/problog/
+sources | https://bitbucket.org/problog/problog
+doc | http://problog.readthedocs.io/en/latest/
+v1 ? | yes, even v2
+online tutorial and REPL | https://dtai.cs.kuleuven.be/problog/tutorial.html
+
+ProbLog is built with Python. Its only requirement is Python2.7 or 3.
+
+One can [interact with ProbLog from within Python code](http://problog.readthedocs.io/en/latest/python.html).
+
+### Install
+
+    pip install problog
+
+## PyDatalog. Logic programming to use inside your Python program.
+
+PyDatalog |  
+---       | ---
+official website | https://sites.google.com/site/pydatalog/
+sources          | https://github.com/pcarbonn/pyDatalog
+doc              | https://sites.google.com/site/pydatalog/Online-datalog-tutorial
+v1 ?             | v0.17 (january, 2016)
+PyPy ?           | yes
+
+pyDatalog adds the logic programming paradigm to Python. Logic
+programmers can now use the extensive standard library of Python, and
+Python programmers can now express complex algorithms quickly.
+
+
+```python
+from pyDatalog import pyDatalog
+pyDatalog.create_terms('factorial, N')
+
+
+factorial[N] = N*factorial[N-1]
+
+factorial[1] = 1
+
+print(factorial[3]==N)  # prints N=6
+```
+
+### Installation
+
+`pip install pyDatalog`
+`pip install sqlalchemy`
+
+### Example projects
+
+No examples found, only
+[testimonials](https://sites.google.com/site/pydatalog/home/datalog-applications).
 
 # Misc
 
