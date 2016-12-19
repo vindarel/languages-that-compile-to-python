@@ -1,48 +1,28 @@
 We have languages that are variants of Python since they can use
-Python libs: that's the case of **Dogelang**, **Mochi**, **Hy** and
-**Coconut**.
+Python libs: that's the case of **Dogelang**, **Mochi**, **Hy**,
+**Coconut** and **Hask**.
 
 Then, we have languages that target the Python platform and
 domain-specific languages, fully compatible with Python or not.
 
-<!-- generetae the toc with npm install markdown-toc -->
+<!-- generetae the toc with npm install markdown-toc and running markdown-toc -i README.md -->
 
 <!-- toc -->
 
 - [Variants of Python. They can use Python libs.](#variants-of-python-they-can-use-python-libs)
   * [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
-    + [Language features](#language-features)
-    + [Install](#install)
-    + [Editors](#editors)
-    + [Example projects](#example-projects)
   * [Hy - A dialect of Lisp that's embedded in Python](#hy---a-dialect-of-lisp-thats-embedded-in-python)
-    + [Language features](#language-features-1)
-    + [Install](#install-1)
-    + [Editors](#editors-1)
-    + [Example projects](#example-projects-1)
-    + [Good reads](#good-reads)
   * [Mochi - Dynamically typed programming language for functional programming and actor-style programming](#mochi---dynamically-typed-programming-language-for-functional-programming-and-actor-style-programming)
-    + [Language features](#language-features-2)
-    + [Install](#install-2)
-    + [Editors](#editors-2)
-    + [Good reads](#good-reads-1)
   * [Coconut - Simple, elegant, Pythonic functional programming](#coconut---simple-elegant-pythonic-functional-programming)
-    + [Language features](#language-features-3)
-    + [Install](#install-3)
-    + [Editors](#editors-3)
+  * [Hask -  Haskell language features and standard libraries in pure Python.](#hask----haskell-language-features-and-standard-libraries-in-pure-python)
   * [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
 - [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
   * [Haxe, the cross-platform toolkit](#haxe-the-cross-platform-toolkit)
 - [Domain-specific languages](#domain-specific-languages)
   * [ProbLog. Probabilistic Logic Programming.](#problog-probabilistic-logic-programming)
-    + [Install](#install-4)
   * [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
-    + [Installation](#installation)
-    + [Example projects](#example-projects-2)
 - [Misc](#misc)
   * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
-    + [Features](#features)
-    + [Good talks](#good-talks)
 
 <!-- tocstop -->
 
@@ -337,6 +317,56 @@ Editor |  
 Emacs | https://github.com/NickSeagull/coconut-mode
 Sublime | https://github.com/evhub/sublime-coconut
 Vim | https://github.com/manicmaniac/coconut.vim
+
+
+## Hask -  Haskell language features and standard libraries in pure Python.
+
+Hask |  
+--- | ---
+sources | [https://github.com/billpmurphy/hask](https://github.com/billpmurphy/hask)
+doc | on github
+v1 ? | no
+created | july, 2015
+
+Hask is a pure-Python, zero-dependencies library that mimics most of
+the core language tools from Haskell, including:
+
+- **Full Hindley-Milner type system** (with typeclasses) that will typecheck any function decorated with a Hask type signature. Also, typed functions can be **partially applied**.
+```python
+@sig(H/ "a" >> "b" >> "a")
+def const(x, y):
+    return x
+```
+- Easy creation of new **algebraic data types** and new typeclasses, with Haskell-like syntax
+- **Pattern matching** with case expressions
+```python
+def fib(x):
+    return ~(caseof(x)
+                | m(0)   >> 1
+                | m(1)   >> 1
+                | m(m.n) >> fib(p.n - 1) + fib(p.n - 2))
+```
+- Automagical function **currying/partial application** and function composition
+- Efficient, **immutable, lazily evaluated** List type with Haskell-style list comprehensions
+- All your favorite syntax and control flow tools, including **operator sections**, **monadic error handling**, **guards**, and more
+- Python port of (some of) the standard libraries from Haskell's base, including:
+    - Algebraic datatypes from the Haskell Prelude, including Maybe and Either
+    - Typeclasses from the Haskell base libraries, including Functor, Applicative, Monad, Enum, Num, and all the rest
+    - Standard library functions from base, including all functions from Prelude, Data.List, Data.Maybe, and more
+
+
+Features not yet implemented, but coming soon:
+
+    - Python 3 compatibility
+    - Better support for polymorphic return values/type defaulting
+    - Better support for lazy evaluation (beyond just the List type and pattern matching)
+    - More of the Haskell standard library (Control.* libraries, QuickCheck, and more)
+    - Monadic, lazy I/O
+
+### Install
+
+    git clone https://github.com/billpmurphy/hask
+    python setup.py install
 
 
 ## Rabbit - a functional language on top of Python (discontinued in favor of Coconut)
