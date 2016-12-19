@@ -1,9 +1,13 @@
-We have languages that are variants of Python since they can use
-Python libs: that's the case of **Dogelang**, **Mochi**, **Hy**,
-**Coconut** and **Hask**.
+We have variants of Python that can use Python libs: welcome to
+**Dogelang**, **Mochi**, **Hy**, **Coconut** and **Hask**.
 
-Then, we have languages that target the Python platform and
-domain-specific languages, fully compatible with Python or not.
+We can also have languages that target the Python platform without
+being necessarily compatible with Python, and domain-specific
+languages.
+
+For more ressources related to functional programming in Python, see
+the [Awesome Functional Python](https://github.com/sfermigier/awesome-functional-python)
+list.
 
 <!-- generetae the toc with npm install markdown-toc and running markdown-toc -i README.md -->
 
