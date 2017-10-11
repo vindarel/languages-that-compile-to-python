@@ -25,8 +25,11 @@ list.
 - [Domain-specific languages](#domain-specific-languages)
   * [ProbLog. Probabilistic Logic Programming.](#problog-probabilistic-logic-programming)
   * [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
-- [Misc](#misc)
-  * [Pixie, a lightweight and native lisp built in RPython](#pixie-a-lightweight-and-native-lisp-built-in-rpython)
+    + [Installation](#installation)
+    + [Example projects](#example-projects-2)
+- [Other languages built in RPython](#other-languages-built-in-rpython)
+  * [Monte - secure distributed computation](#monte---secure-distributed-computation)
+  * [Pixie, a lightweight and native lisp](#pixie-a-lightweight-and-native-lisp)
 
 <!-- tocstop -->
 
@@ -492,9 +495,26 @@ print(factorial[3]==N)  # prints N=6
 No examples found, only
 [testimonials](https://sites.google.com/site/pydatalog/home/datalog-applications).
 
-# Misc
+# Other languages built in RPython
 
-## Pixie, a lightweight and native lisp built in RPython
+## Monte - secure distributed computation
+
+Monte is a "nascent dynamic programming language reminiscent of Python
+and [E](http://erights.org/). It is based upon The Principle of Least
+Authority (POLA), which governs interactions between objects, and a
+capability-based object model, which grants certain essential safety
+guarantees to all objects".
+
+Monte |  
+---   | ---
+Sources | https://github.com/monte-language
+Doc     | https://monte.readthedocs.io/en/latest/intro.html
+v0.1 ?  | yes, v2016.1
+
+Built on Pypy.
+
+
+## Pixie, a lightweight and native lisp
 
 Pixie |  
 --- | ---
