@@ -30,6 +30,7 @@ list.
 - [Other languages built in RPython](#other-languages-built-in-rpython)
   * [Monte - secure distributed computation](#monte---secure-distributed-computation)
   * [Pixie, a lightweight and native lisp](#pixie-a-lightweight-and-native-lisp)
+  * [RSqueak, a Squeak/Smalltalk VM written in RPython](#rsqueak-a-squeaksmalltalk-vm-written-in-rpython)
 
 <!-- tocstop -->
 
@@ -575,3 +576,12 @@ From the FAQ:
 ### Good talks
 
 - ["Pixie - A Lightweight Lisp with 'Magical' Powers" by Timothy Baldridge on StrangeLoop, september 2015](https://www.youtube.com/watch?v=1AjhFZVfB9c)
+
+## RSqueak, a Squeak/Smalltalk VM written in RPython
+
+RSqueak |  
+--- | ---
+Sources | https://github.com/HPI-SWA-Lab/RSqueak
+Doc | http://rsqueak.readthedocs.io
+
+with all-in-one multiplatform bundles and 32 bits binaries.
