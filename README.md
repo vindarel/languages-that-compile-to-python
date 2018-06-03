@@ -40,8 +40,7 @@ The following languages can make use of the Python libraries.
 
 ## Dg - it's a Python ! No, it's a Haskell !
 
- <img src="https://pyos.github.io/dg/images/seriousdawg.jpg", title="NOT'REALLY®" </img>
-
+![NOT'REALLY®](https://pyos.github.io/dg/images/seriousdawg.jpg)
 
 Dogelang  |  
 --- | ---
@@ -127,7 +126,7 @@ dogeweb , a functional web framework atop asyncio |   [<https://pyos.github.io/d
 
 ## Hy - A dialect of Lisp that's embedded in Python
 
-<img src='http://docs.hylang.org/en/latest/_images/hy-logo-small.png', title='' </img>
+![](http://docs.hylang.org/en/stable/_images/hy-logo-small.png)
 
 Hy |  
 -------------|------------------------------------------------------------------------
