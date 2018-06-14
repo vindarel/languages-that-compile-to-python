@@ -293,7 +293,7 @@ expnums = map(pow$(2), range(5))
 expnums |> list |> print
 ```
 
--   lazy lists (surround coma-separated lists with `(|` and `|)`)
+-   lazy lists (surround comma-separated lists with `(|` and `|)`)
 -   destructuring assignment
 -   function composition (with `..`)
 ```livescript
