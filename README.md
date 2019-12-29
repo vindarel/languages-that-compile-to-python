@@ -27,6 +27,7 @@ list.
   * [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
     + [Installation](#installation)
     + [Example projects](#example-projects-2)
+  * [RBQL: SQL dialect with Python expressions](#rbql-sql-dialect-with-python-expressions)
 - [Other languages built in RPython](#other-languages-built-in-rpython)
   * [Monte - secure distributed computation](#monte---secure-distributed-computation)
   * [Pixie, a lightweight and native lisp](#pixie-a-lightweight-and-native-lisp)
@@ -496,7 +497,7 @@ No examples found, only
 [testimonials](https://sites.google.com/site/pydatalog/home/datalog-applications).
 
 
-## RBQL. SQL dialect with Python expressions.
+## RBQL: SQL dialect with Python expressions
 
 RBQL |  
 ---       | ---
