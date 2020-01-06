@@ -508,6 +508,10 @@ PyPy ?           | pip install rbql
 
 RBQL is both a library and a command line tool which provides SQL-like language with Python expressions  
 RBQL is integrated into "Rainbow CSV" text editor plugins available for VSCode, Vim, Sublime, Atom  
+Main Features:
+* Allows to use Python expressions inside _SELECT_, _UPDATE_, _WHERE_ and _ORDER BY_ statements
+* Result set of any query immediately becomes a first-class table on it's own
+* Works out of the box, no external dependencies
 
 #### Usage example:
 ```python
@@ -519,10 +523,10 @@ input_table = [
     ['Jane Austen',1775,'England'],
     ['Hayao Miyazaki',1941,'Japan'],
 ]
-user_query = 'SELECT a1, a2 % 1000 WHERE a3 != "USA" LIMIT 3'
+user_query = 'SELECT a.name, "birth century: {}".format(a.DOB // 100 + 1) WHERE a.name == "Roosevelt" or re.search("an", a.country, re.IGNORECASE) is not None ORDER BY random.random()'
 output_table = []
 warnings = []
-rbql.query_table(user_query, input_table, output_table, warnings)
+rbql.query_table(user_query, input_table, output_table, warnings, input_column_names=['name', 'DOB', 'country'])
 for record in output_table:
     print(','.join([str(v) for v in record]))
 ```
