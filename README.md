@@ -52,7 +52,7 @@ created | june, 2012
 
 -   compiles to CPython 3.4. Dg is an alternative syntax to Python 3.
 -   compatible with all the libraries
--   runs on PyPy (Got to wait for a JIT-enabled PyPy 3.3 first, though.)
+-   runs on PyPy
 
 ### Language features
 
