@@ -125,6 +125,56 @@ Project |  
 --- | ---
 dogeweb , a functional web framework atop asyncio |   [<https://pyos.github.io/dogeweb/>](https://pyos.github.io/dogeweb/)
 
+## Hissp - It's Python with a Lissp
+
+![](https://raw.githubusercontent.com/gilch/hissp/master/docs/hissp.svg)
+
+> Hissp is a modular Lisp implementation that compiles to a functional subset of Python—Syntactic macro metaprogramming with full access to the Python ecosystem!
+
+Hissp |  
+-------------|------------------------------------------------------------------------
+sources |      [<https://github.com/gilch/hissp>](https://github.com/gilch/hissp)
+  doc   |       [https://hissp.readthedocs.io/](https://hissp.readthedocs.io/)
+  v1 ?  |       no, v0.2 as of May 2021
+  created|       2019
+  discuss     | [gitter](https://gitter.im/hissp-lang/community)
+
+The Hissp compiler is written in Python 3.8.
+
+### Language features
+
+> The Hissp compiler should include what it needs to achieve its goals, but no more. Bloat is not allowed.
+
+> Hissp compiles to an unpythonic functional subset of Python.
+
+> Hissp's basic macros are meant to be just enough to bootstrap native unit tests and demonstrate the macro system. They may suffice for small embedded Hissp projects, but you will probably want a more comprehensive macro suite for general use.
+
+> You do not need Hissp installed to run the final compiled Python output
+
+
+```lisp
+(defmacro attach (target : :* args)
+  "Attaches the named variables as attributes of the target.
+
+  Positional arguments use the same name as the variable.
+  Names after the ``:`` are key-value pairs.
+  "
+  (let (iargs (iter args)
+        $target `$#target)
+    (let (args (itertools..takewhile (lambda (a)
+                                       (operator..ne a ':))
+                                     iargs))
+      `(let (,$target ,target)
+         ,@(map (lambda (arg)
+                  `(setattr ,$target ',arg ,arg))
+                args)
+         ,@(map (lambda (kw)
+                  `(setattr ,$target ',kw ,(next iargs)))
+                iargs)
+         ,$target))))
+```
+
+
 ## Hy - A dialect of Lisp that's embedded in Python
 
 ![](http://docs.hylang.org/en/stable/_images/hy-logo-small.png)
