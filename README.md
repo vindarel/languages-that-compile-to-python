@@ -152,15 +152,15 @@ dogeweb , a functional web framework atop asyncio |   [<https://pyos.github.io/d
 
 ## Erg - General statically typed multiparadigm rusty programming language
 
-![](https://raw.githubusercontent.com/erg-lang/erg/8d19820c2111c19b0428a5d2f437ecc7d75f76ec/assets/erg_logo_with_slogan_transparent.svg)
+![](https://github.com/erg-lang/erg/blob/main/assets/erg_logo_with_slogan.svg)
 
 > A statically typed language that can deeply improve the Python ecosystem 
 
 Erg |
--------------|------------------------------------------------------------------------
-sources |      [<https://github.com/erg-lang/erg>](https://github.com/erg-lang/erg)
-  doc   |       [https://erg-lang.github.io/](https://erg-lang.github.io/)
-  v1 ?  |       no, v0.4.2 as of September 2022
+------------ | -----------------------------------------------------------------------
+sources  |      [<https://github.com/erg-lang/erg>](https://github.com/erg-lang/erg)
+  doc    |       [https://erg-lang.github.io/](https://erg-lang.github.io/)
+  v1 ?   |       no, v0.4.2 as of September 2022
   created|       2022
 
 The Erg compiler is written in Rust.
