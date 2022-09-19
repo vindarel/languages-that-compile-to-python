@@ -158,10 +158,10 @@ dogeweb , a functional web framework atop asyncio |   [<https://pyos.github.io/d
 
 Erg |
 -------------|------------------------------------------------------------------------
-sources      | [<https://github.com/erg-lang/erg>](https://github.com/erg-lang/erg)
-  doc        | [https://erg-lang.github.io/](https://erg-lang.github.io/)
-  v1 ?       | no, v0.4.2 as of September 2022
-  created    | 2022
+sources | [<https://github.com/erg-lang/erg>](https://github.com/erg-lang/erg)
+  doc | [https://erg-lang.github.io/](https://erg-lang.github.io/)
+  v1 ? | no, v0.4.2 as of September 2022
+  created | 2022
 
 The Erg compiler is written in Rust.
 
