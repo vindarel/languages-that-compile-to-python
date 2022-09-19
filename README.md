@@ -14,24 +14,49 @@ list.
 <!-- toc -->
 
 - [Variants of Python. They can use Python libs.](#variants-of-python-they-can-use-python-libs)
-  * [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
-  * [Hy - A dialect of Lisp that's embedded in Python](#hy---a-dialect-of-lisp-thats-embedded-in-python)
-  * [Mochi - Dynamically typed programming language for functional programming and actor-style programming](#mochi---dynamically-typed-programming-language-for-functional-programming-and-actor-style-programming)
-  * [Coconut - Simple, elegant, Pythonic functional programming](#coconut---simple-elegant-pythonic-functional-programming)
-  * [Hask -  Haskell language features and standard libraries in pure Python.](#hask----haskell-language-features-and-standard-libraries-in-pure-python)
-  * [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
+  - [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
+    - [Language features](#language-features)
+    - [Install](#install)
+    - [Editors](#editors)
+    - [Example projects](#example-projects)
+  - [Erg - General statically typed multiparadigm rusty programming language](#erg---general-statically-typed-multiparadigm-rusty-programming-language)
+    - [Language features](#language-features-1)
+  - [Hissp - It's Python with a Lissp!](#hissp---its-python-with-a-lissp)
+    - [Language features](#language-features-2)
+  - [Hy - A dialect of Lisp that's embedded in Python](#hy---a-dialect-of-lisp-thats-embedded-in-python)
+    - [Language features](#language-features-3)
+    - [Install](#install-1)
+    - [Editors](#editors-1)
+    - [Example projects](#example-projects-1)
+    - [Good reads](#good-reads)
+  - [Mochi - Dynamically typed programming language for functional programming and actor-style programming](#mochi---dynamically-typed-programming-language-for-functional-programming-and-actor-style-programming)
+    - [Language features](#language-features-4)
+    - [Install](#install-2)
+    - [Editors](#editors-2)
+    - [Good reads](#good-reads-1)
+  - [Coconut - Simple, elegant, Pythonic functional programming](#coconut---simple-elegant-pythonic-functional-programming)
+    - [Language features](#language-features-5)
+    - [Install](#install-3)
+    - [Editors](#editors-3)
+  - [Hask -  Haskell language features and standard libraries in pure Python.](#hask----haskell-language-features-and-standard-libraries-in-pure-python)
+    - [Install](#install-4)
+  - [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
 - [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
-  * [Haxe, the cross-platform toolkit](#haxe-the-cross-platform-toolkit)
+  - [Haxe, the cross-platform toolkit](#haxe-the-cross-platform-toolkit)
 - [Domain-specific languages](#domain-specific-languages)
-  * [ProbLog. Probabilistic Logic Programming.](#problog-probabilistic-logic-programming)
-  * [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
-    + [Installation](#installation)
-    + [Example projects](#example-projects-2)
-  * [RBQL: SQL dialect with Python expressions](#rbql-sql-dialect-with-python-expressions)
+  - [ProbLog. Probabilistic Logic Programming.](#problog-probabilistic-logic-programming)
+    - [Install](#install-5)
+  - [PyDatalog. Logic programming to use inside your Python program.](#pydatalog-logic-programming-to-use-inside-your-python-program)
+    - [Installation](#installation)
+    - [Example projects](#example-projects-2)
+  - [RBQL: SQL dialect with Python expressions](#rbql-sql-dialect-with-python-expressions)
+      - [Usage example:](#usage-example)
 - [Other languages built in RPython](#other-languages-built-in-rpython)
-  * [Monte - secure distributed computation](#monte---secure-distributed-computation)
-  * [Pixie, a lightweight and native lisp](#pixie-a-lightweight-and-native-lisp)
-  * [RSqueak, a Squeak/Smalltalk VM written in RPython](#rsqueak-a-squeaksmalltalk-vm-written-in-rpython)
+  - [Monte - secure distributed computation](#monte---secure-distributed-computation)
+  - [Pixie, a lightweight and native lisp](#pixie-a-lightweight-and-native-lisp)
+    - [Features](#features)
+    - [Good talks](#good-talks)
+  - [RSqueak, a Squeak/Smalltalk VM written in RPython](#rsqueak-a-squeaksmalltalk-vm-written-in-rpython)
 
 <!-- tocstop -->
 
@@ -125,7 +150,65 @@ Project |  
 --- | ---
 dogeweb , a functional web framework atop asyncio |   [<https://pyos.github.io/dogeweb/>](https://pyos.github.io/dogeweb/)
 
-## Hissp - It's Python with a Lissp
+## Erg - General statically typed multiparadigm rusty programming language
+
+![](https://raw.githubusercontent.com/erg-lang/erg/8d19820c2111c19b0428a5d2f437ecc7d75f76ec/assets/erg_logo_with_slogan_transparent.svg)
+
+> A statically typed language that can deeply improve the Python ecosystem 
+
+Erg |
+-------------|------------------------------------------------------------------------
+sources |      [<https://github.com/erg-lang/erg>](https://github.com/erg-lang/erg)
+  doc   |       [https://erg-lang.github.io/](https://erg-lang.github.io/)
+  v1 ?  |       no, v0.4.2 as of September 2022
+  created|       2022
+
+The Erg compiler is written in Rust.
+
+### Language features
+
+> Erg has a smart & powerful type system. For example, Erg can do null checking (Option type), division by zero, and out-of-range addresses in arrays at compile time.
+
+> Erg consists of a very simple syntax, which can significantly reduce the amount of code compared to other languages. However, its functionality is not inferior to them.
+
+> Erg is a pure object-oriented language. Everything is an object; types, functions, and operators are all objects. On the other hand, Erg is also a functional language. Erg requires some kinds of markers to be placed on code that causes side effects or changes internal state, which can localize the complexity of code. This will greatly improve the maintainability of your code.
+
+> Erg is internally compatible with Python and can import the Python API at zero cost.
+
+> Erg emphasizes the readability of error messages.
+
+```python
+    # Functional style (immutable), same as `sorted(list)` in Python
+    immut_arr = [1, 3, 2]
+    assert immut_arr.sort() == [1, 2, 3]
+    # Object-oriented style (mutable)
+    mut_arr = ![1, 3, 2]
+    mut_arr.sort!()
+    assert mut_arr == [1, 2, 3]
+    i = !1
+    i.update! old -> old + 1
+    assert i == 2
+
+    # Functions cannot cause side effects
+    inc i: Int! =
+        i.update! old -> old + 1
+    # SyntaxError: cannot call a procedural method in a function
+    # hint: only methods of mutable types can change the state of objects
+
+    # Code that uses a lot of side effects is redundant, so you will naturally write pure code
+    Counter! = Inherit Int!
+    Counter!.
+        new i: Int = Self!::__new__ !i
+        inc! ref! self =
+            self.update! old -> old + 1
+
+    c = Counter!.new 1
+    c.inc!()
+    assert c == 2
+```
+
+
+## Hissp - It's Python with a Lissp!
 
 ![](https://raw.githubusercontent.com/gilch/hissp/master/docs/hissp.svg)
 
