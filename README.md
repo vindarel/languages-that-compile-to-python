@@ -20,6 +20,7 @@ list.
     - [Dg - it's a Python ! No, it's a Haskell !](#dg---its-a-python--no-its-a-haskell-)
     - [Hissp - It's Python with a Lissp!](#hissp---its-python-with-a-lissp)
     - [Hy - A dialect of Lisp that's embedded in Python](#hy---a-dialect-of-lisp-thats-embedded-in-python)
+    - [Basilisp -  a Clojure-compatible(-ish) Lisp dialect targeting Python 3.8+](#basilisp----a-clojure-compatible-ish-lisp-dialect-targeting-python-38)
     - [Mochi - Dynamically typed programming language for functional programming and actor-style programming](#mochi---dynamically-typed-programming-language-for-functional-programming-and-actor-style-programming)
     - [Coconut - Simple, elegant, Pythonic functional programming](#coconut---simple-elegant-pythonic-functional-programming)
     - [Hask -  Haskell language features and standard libraries in pure Python.](#hask----haskell-language-features-and-standard-libraries-in-pure-python)
@@ -254,6 +255,44 @@ Project |  
 Title |  
 --- | ---
 How Hy backported "yield from" to Python 2 |   [<http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/>](http://dustycloud.org/blog/how-hy-backported-yield-from-to-python2/)
+
+## Basilisp -  a Clojure-compatible(-ish) Lisp dialect targeting Python 3.8+
+
+Basilisp |  
+  ---------|----------------------------------------------------------------
+  sources  |[https://github.com/basilisp-lang/basilisp](https://github.com/basilisp-lang/basilisp)
+  doc | [https://basilisp.readthedocs.io/en/latest/](https://basilisp.readthedocs.io/en/latest/)
+  v1 ?  | no (as of 2024, Jan) but "generally stable at this point"
+  created |  initial development release in 2018
+
+### Language features
+
+- Immutable data structures, backed by Immutables and Pyrsistent
+- Strong emphasis on functional programming concepts
+- Access to the vast array of existing Python libraries
+- Seamless interoperability between Python code and Basilisp code
+- Sophisticated REPL for REPL-based development
+
+Planned features:
+
+> Basilisp is still young and so lacks many features that more mature languages and runtimes might include. There are many such planned features that will hopefully improve the ergonomics of the project for new developers.
+
+>  fundamental differences and omissions in Basilisp that make it differ from Clojure:
+
+- Basilisp does not include Ref types or software transactional memory (STM) support.
+- Basilisp does not include Agent support (support is tracked in #413).
+- All Vars are reified at runtime and users may use the binding macro as in Clojure.
+- Support for Clojure libs is planned.
+- Type hints may be applied anywhere they are supported in Clojure (as the :tag metadata key), but the compiler does not currently use them for any purpose.
+
+```lisp
+(def
+  ^{:doc      "Returns the second element in a Seq."
+    :arglists '([seq])}
+  second
+  (fn* second [seq] (first (rest seq))))
+```
+
 
 ## Mochi - Dynamically typed programming language for functional programming and actor-style programming
 
