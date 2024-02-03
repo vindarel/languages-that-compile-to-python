@@ -25,6 +25,7 @@ list.
     - [Coconut - Simple, elegant, Pythonic functional programming](#coconut---simple-elegant-pythonic-functional-programming)
     - [Hask -  Haskell language features and standard libraries in pure Python.](#hask----haskell-language-features-and-standard-libraries-in-pure-python)
     - [Rabbit - a functional language on top of Python (discontinued in favor of Coconut)](#rabbit---a-functional-language-on-top-of-python-discontinued-in-favor-of-coconut)
+    - [MakrellPy - a functional language with metaprogramming support and simplistic syntax](#makrellpy---a-functional-language-with-metaprogramming-support-and-simplistic-syntax)
 - [Implemented in another language but target the Python platform. They can use Python libs.](#implemented-in-another-language-but-target-the-python-platform-they-can-use-python-libs)
     - [Erg - General statically typed multiparadigm rusty programming language](#erg---general-statically-typed-multiparadigm-rusty-programming-language)
 - [Other languages that target the Python platform](#other-languages-that-target-the-python-platform)
@@ -501,6 +502,65 @@ qsort(l) = (
     $ a,as = l
     ) @ len:l
 ```
+
+## MakrellPy - a functional language with metaprogramming support and simplistic syntax
+
+![](https://github.com/hcholm/makrell-py/blob/main/doc/makrell.png)
+
+MakrellPy |  
+--------|------------------------------------------------------------------------
+sources |  [<https://github.com/hcholm/makrell-py>](https://github.com/hcholm/makrell-py)
+v1 ?    |  no
+created |  February, 2024
+
+MakrellPy, part of the Makrell language family, is a general-purpose, functional and homiconic programming language with two-way Python interoperability, metaprogramming support and simplistic syntax. The language family is based on the Makrell Base Format, a general data format that can be used both for programming languages and data interchange. Other family members include MRON, a lightweight alternative to JSON, and MRML, a lightweight alternative to XML and HTML.
+
+### Language features
+
+- Compiles to Python AST, runs on Python with two-way interoperability.
+- Simplistic syntax using the Makrell Base Format.
+- Functional programming with multiline lambdas, partial application, and function composition.
+- Metaprogramming support with custom operators, macros and custom metaprogramming functions.
+- Homiconic programming with a simple and consistent syntax for data and code.
+- Languages in the Makrell family can be embedded in each other while maintaining the base format.
+- The Makrell package includes MRON and MRML support, an API for working with the Makrell Base Format and a basic language server supporting the Language Server Protocol.
+- REPL, syntax highlighting and basic diagnostics support for Visual Studio Code.
+
+### Sample code
+```
+{fun add [x y]
+    x + y}
+
+a = {add 2 3}
+{print a}  # 5
+a | print  # same, with pipe operator
+
+f = [x y] -> {do
+    {print "multiline lambda here"}
+    x * y
+}
+
+{print {f 2 3}}  # function call
+
+add3 = {f 3 _}  # partial application
+
+2 | {+ 3} | {* 5}  # operators as functions
+
+add3mul5 = add3 >> {* 5}  # function composition
+```
+
+### Install
+
+    pip install makrell
+
+### Editors
+
+Editor |
+------- | --------------------------------------------------------------------------
+Visual Studio Code | [<https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell>](https://marketplace.
+visualstudio.com/items?itemName=hcholm.vscode-makrell)
+Other | MakrellPy is supported by the Language Server Protocol, so it should work with any editor that supports LSP.
+
 # Implemented in another language but target the Python platform. They can use Python libs.
 
 
