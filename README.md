@@ -513,15 +513,15 @@ sources |  [<https://github.com/hcholm/makrell-py>](https://github.com/hcholm/ma
 v1 ?    |  no
 created |  February, 2024
 
-MakrellPy, part of the Makrell language family, is a general-purpose, functional and homiconic programming language with two-way Python interoperability, metaprogramming support and simplistic syntax. The language family is based on the Makrell Base Format, a general data format that can be used both for programming languages and data interchange. Other family members include MRON, a lightweight alternative to JSON, and MRML, a lightweight alternative to XML and HTML.
+MakrellPy, part of the Makrell language family, is a general-purpose, functional and homoiconic programming language with two-way Python interoperability, metaprogramming support and simple syntax. The language family is based on the Makrell Base Format, a general data format that can be used both for programming languages and data interchange. Other family members include MRON, a lightweight alternative to JSON, and MRML, a lightweight alternative to XML and HTML.
 
 ### Language features
 
 - Compiles to Python AST, runs on Python with two-way interoperability.
-- Simplistic syntax using the Makrell Base Format.
+- Simple syntax using the Makrell Base Format.
 - Functional programming with multiline lambdas, partial application, and function composition.
 - Metaprogramming support with custom operators, macros and custom metaprogramming functions.
-- Homiconic programming with a simple and consistent syntax for data and code.
+- Homiconic, with a simple and consistent syntax for data and code.
 - Languages in the Makrell family can be embedded in each other while maintaining the base format.
 - The Makrell package includes MRON and MRML support, an API for working with the Makrell Base Format and a basic language server supporting the Language Server Protocol.
 - REPL, syntax highlighting and basic diagnostics support for Visual Studio Code.
@@ -555,10 +555,9 @@ add3mul5 = add3 >> {* 5}  # function composition
 
 ### Editors
 
-Editor |
-------- | --------------------------------------------------------------------------
-Visual Studio Code | [<https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell>](https://marketplace.
-visualstudio.com/items?itemName=hcholm.vscode-makrell)
+Editor |  
+--- | ---
+Visual Studio Code | [<https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell>](https://marketplace.visualstudio.com/items?itemName=hcholm.vscode-makrell)
 Other | MakrellPy is supported by the Language Server Protocol, so it should work with any editor that supports LSP.
 
 # Implemented in another language but target the Python platform. They can use Python libs.
